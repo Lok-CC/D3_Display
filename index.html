@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Display</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Scatterplot</h1>
+  <svg id="svgScatterplot2"
+    version="1.1"
+    baseProfile="full"
+    xmlns="http://www.w3.org/2000/svg" >
+  </svg>
+  <br>
+
+  <h1>Pie Chart</h1>
+  <svg id="svgPieChart"
+    version="1.1"
+    baseProfile="full"
+    xmlns="http://www.w3.org/2000/svg" >
+  </svg>
+  <input id="inputPieChart" type="range" step="1">
+  <br>
+
+  <h1>Histogram</h1>
+  <svg id="svgHistogram"
+    version="1.1"
+    baseProfile="full"
+    xmlns="http://www.w3.org/2000/svg" >
+  </svg>
+  <p class="bin-count"></p>
+  <input id="inputHistogram" type="range" min="1" step="1" max="50"/>
+  <br>
+
+
+  
+  <script src="https://d3js.org/d3.v4.js"></script>
+  <script src="regionData.js"></script>
+  <script src="birthDataExtrema.js"></script>
+  <script src="birthDataPieChart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
